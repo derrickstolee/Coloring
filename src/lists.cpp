@@ -114,8 +114,9 @@ int main(int argc, char** argv)
 		
 			int result = getline(&buffer, &buflen, stdin);
 
-			if ( result )
+			if ( result == 0 )
 			{
+				printf("expecting data on this line!\n");
 				exit(result);
 			}
 			
