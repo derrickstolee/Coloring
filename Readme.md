@@ -18,6 +18,13 @@ Finally, all runs can be modified to restrict to choosability with separation by
 
 For example, one could navigate to the `bin` directory after building and type the following command:"
 
-  `lists --reducible -k 4 -c 2 < ../examples/reducible-k4c2.txt`
+  `lists --reducible -k 4 -c 2 --print < ../examples/reducible-k4c2.txt`
+
+This results in output that begins with the following for the first graph tested:
+
+  `48 connected subgraphs`<br/>
+`recursive calls: 619873`<br/>
+`:Ea@_gMC is 4-reducible (with external degrees 0 2 1 2 1 2)`<br/>
+`done in 0.31250 seconds.`
 
 These examples were used during the collaboration leading to [(4,2)-choosability of planar graphs with forbidden structures](https://arxiv.org/abs/1512.03787).
