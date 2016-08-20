@@ -2,6 +2,8 @@ This project contains a basic program for checking list-colorability of a graph.
 
 ## Compilation
 
+This project requires [nauty 2.6](http://users.cecs.anu.edu.au/~bdm/nauty/). Unzip the `nauty` source code into a directory called `nauty` adjacent to the root of this git repository. For example, I have one directory that contains a `nauty` folder and a `Coloring` folder.
+
 Navigate to the `src/` directory and type `make`. The binaries will be loaded into the `bin/` directory.
 
 ## Execution
