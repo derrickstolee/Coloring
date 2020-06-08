@@ -16,7 +16,7 @@ CXX = g++
 OPT = -O4
 # -O0 -g
 #DEBUG =   -stdlib=libstdc++
-WARNINGS = -Wall -Werror
+WARNINGS =  -Werror
 
 
 UTILSDIR = ../../Utilities/src
@@ -48,7 +48,6 @@ LIBOBJS	= $(TREESEARCHOBJS) $(UTILSOBJS)  $(NAUTYOBJS)
 
 all: $(OBJECTS) $(TESTS) $(TARGETS)
 	mv lists.exe lists
-	-@mkdir ../bin
 	mv lists ../bin
 	mv *.o ../bin
 	mv *.exe ../bin
@@ -66,7 +65,6 @@ all: $(OBJECTS) $(TESTS) $(TARGETS)
         	$(LIBOBJS) $(LIBS)					\
         $(OBJECTS)				    	   			\
             $< -o $@
-	-@mkdir ../bin
 	cp $@ ../bin/
         
 .c.exe: $< $(COBJECTS)
